@@ -5,12 +5,12 @@ const TodoForm = (props) => {
 
     const [input, setInput] = useState("");
 
-    const inputRef = useRef(null)
+    const inputRef = useRef(null);
 
-    useEffect{() => {
+    useEffect(() => {
         inputRef.current.focus();
         // focus on whatever is in ref.
-    }}
+    })
 
     const handleChange = e => {
         setInput(e.target.value);
